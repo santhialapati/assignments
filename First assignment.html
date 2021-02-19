@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The fundamental issue here is that JavaScript (ECMAScript) is a loosely typed language and it performs automatic type conversion on values to accommodate the operation being performed</h1>
+    <script>
+    console.log(1 + "2" + "2"); // it is concat as string
+console.log(1 + +"2" + "2"); // 1st + makes 2 as string to integer. but second 2 is string. so it makes 32
+console.log(1 + -"1" + "2");// 1st - makes 1 as string to integer. but second 2 is string. so it makes 02
+console.log(+"1" + "1" + "2");// 1st - makes 1 as string to integer. and same behaviour of the first logging 112
+console.log("A" - "B" + "2"); // - cannot used for string values. nor this reason find A - B is NAN and adding 2 as string.(NAN2)
+    console.log("A"-"B"+2);// missing ""
+    </script>
+    </body>
+    </html>
